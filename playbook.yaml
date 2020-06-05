@@ -1,0 +1,12 @@
+---
+- name: First Playbook
+  hosts: localhost
+  become: yes
+  become_metod: sudo
+  tasks:
+ - name: Task 1
+    ping:
+ - name: Task 1
+    ping:
+
+
