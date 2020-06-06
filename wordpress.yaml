@@ -1,0 +1,15 @@
+---
+- name: Installs packages
+  hosts: all
+  become: yes
+  become_method: sudo
+  user: centos
+  tasks:
+  - name: Install worpress
+    get_url:
+       url: wordpress
+  
+  unarchive:
+
+  loop to install:
+  httpd
