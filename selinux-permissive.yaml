@@ -1,0 +1,11 @@
+---
+- name: Disable selinux
+  hosts: all
+  become: yes
+  become_method: sudo
+  user: centos
+  tasks:
+  - name: Selinux permissive
+    selinux:
+    policy: targeted
+    state: permissive
